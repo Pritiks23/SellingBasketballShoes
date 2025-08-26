@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>PYRO Basketball Shoes</title>
 <script src="/assets/jquery.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,7 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
 <style>
-/* --- GLOBAL STYLES --- */
 body {
   font-family: helvetica, sans-serif;
   margin: 0 auto;
@@ -40,7 +37,7 @@ h2 {
   text-shadow: 0 0 4px rgba(255,255,255,0.5);
 }
 
-/* --- NAVIGATION BAR --- */
+
 nav {
   text-align: center;
   margin: 20px 0;
@@ -59,8 +56,8 @@ nav a:hover {
   color: #ffffff;
 }
 
-/* --- CARD STYLING --- */
-div {
+
+div.card {
   height: 400px;
   background-size: cover;
   background-position: center;
@@ -73,7 +70,7 @@ div {
   transition: transform 0.5s, box-shadow 0.5s;
 }
 
-div:hover {
+div.card:hover {
   transform: scale(1.03);
   box-shadow: 0 20px 60px rgba(255,215,0,0.6);
 }
@@ -100,7 +97,6 @@ small {
   display: block;
   margin-top: 10px;
   opacity: 0;
-  transition: opacity 0.5s;
 }
 
 .show-description p {
@@ -118,7 +114,6 @@ small {
   font-size: 20px;
 }
 
-/* --- BACKGROUND IMAGES --- */
 .first{
   background-image: url("https://cdn.myportfolio.com/ccd31e7caea6eea9910f96b0f7fc3b16/a8fa3330-2f05-4bd5-9d56-657f20c01588_rw_1200.jpg?h=fbed6a77b0e733d8139b8a0d2797f0d2");
 }
@@ -129,7 +124,6 @@ small {
   background-image: url("https://images.stockcake.com/public/d/c/a/dcada0d4-1b2e-4bff-b0e7-8ca8c03bd678_large/colorful-basketball-shoes-stockcake.jpg");
 }
 
-/* --- RESPONSIVE --- */
 @media (max-width: 600px) {
   h1 {
     font-size: 60px;
@@ -139,7 +133,7 @@ small {
     font-size: 20px;
     margin-bottom: 40px;
   }
-  div {
+  div.card {
     height: 300px;
     margin: 30px 12px;
   }
@@ -150,17 +144,27 @@ small {
   small {
     font-size: 14px;
   }
+
+  /* Mobile logo sizing */
+  .logo {
+    height: 80px;  /* shrink logo */
+    display: block;
+    margin: 0 auto; /* center it */
+  }
+
+  /* Reduce nav margin on mobile */
+  nav {
+    margin: 10px 0;
+  }
 }
 </style>
 </head>
 
 <body>
-<!-- Logo -->
-<div style="text-align: center; margin-top: 20px;">
-  <img src="https://static.vecteezy.com/system/resources/previews/028/194/713/non_2x/fire-flame-icon-isolated-on-black-background-illustration-for-free-download-free-vector.jpg" alt="Logo" style="height: 700px; width: auto;">
+<div>
+  <img class="logo" src="https://static.vecteezy.com/system/resources/previews/028/194/713/non_2x/fire-flame-icon-isolated-on-black-background-illustration-for-free-download-free-vector.jpg" alt="Logo" style="height: 150px; width: auto;">
 </div>
 
-<!-- Navigation Bar -->
 <nav>
   <a href="#women">Women</a>
   <a href="#men">Men</a>
@@ -170,26 +174,27 @@ small {
 <h1>PYRO</h1>
 <h2>Engineered for Champions</h2>
 
-<div class="first">
+<div class="first card">
   <p>Aurion Elite <span class="price">$14,300</span><br />
-  <small>Step onto the court with unmatched elegance and premium craftsmanship. Sleek metallic accents and responsive cushioning let you dominate in both style and performance.</small></p>
+  <small>Premium craftsmanship built to last. Sleek metallic accents and responsive cushioning created for champions.</small></p>
 </div>
 
-<div class="second">
+<div class="second card">
   <p>Platina Drive <span class="price">$9,200</span><br />
-  <small>Unleash cosmic potential with iridescent, color-shifting design inspired by the universe. Advanced propulsion technology delivers explosive speed and agility on every move.</small></p>
+  <small>Simply Out of this world, color-shifting design. Advanced propulsion technology delivers explosive unmatched movement.</small></p>
 </div>
   
-<div class="dessert">
+<div class="dessert card">
   <p>Onyx Reign <span class="price">$7,500</span><br />
-  <small>Embrace the court with mysterious power and a matte black, minimalist design. Lightweight support and a responsive midsole ensure precision and confidence in every step.</small></p>
+  <small>Some win, some reign. Reign stylish.</small></p>
 </div>
 
 <script>
-  $('div').on('click', function() {
+  $('div.card').on('click', function() {
       $(this).toggleClass('show-description');
   });
 </script>
 
 </body>
 </html>
+
