@@ -1,4 +1,17 @@
+
+Bring my website to life on **YOUR** screen
+http://dash.ga.co/pritikavipin/build-your-own-business-website
+
+
+![Uploading Screen Shot 2025-08-25 at 5.22.26 PM.png…]()
+
+
+
 # PYRO Basketball Shoes
+
+
+
+
 
 A **responsive, interactive, and visually immersive webpage** showcasing luxury basketball shoes with a sleek UI/UX design. Built with **HTML, CSS, and jQuery**, the project highlights hover animations, dynamic product cards, and adaptive mobile responsiveness.
 
