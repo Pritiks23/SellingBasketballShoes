@@ -1,9 +1,11 @@
 
-Bring my website to life on **YOUR** screen
+# Bring my website to life on **YOUR** screen
+
 http://dash.ga.co/pritikavipin/build-your-own-business-website
 
 
-![Uploading Screen Shot 2025-08-25 at 5.22.26 PM.png…]()
+<img width="1420" height="848" alt="Screen Shot 2025-08-25 at 5 22 47 PM" src="https://github.com/user-attachments/assets/abe0ab13-68cf-44e2-a57c-6eb5e4285339" />
+
 
 
 
